@@ -1,9 +1,6 @@
 {
   "name": "@konkon/parser-darwin-x64",
   "version": "0.0.1",
-  "os": [
-    "darwin"
-  ],
   "cpu": [
     "x64"
   ],
@@ -27,5 +24,8 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "repository": "https://github.com/KonkonBot/args-parser"
+  "repository": "https://github.com/KonkonBot/args-parser",
+  "os": [
+    "darwin"
+  ]
 }

@@ -1,9 +1,6 @@
 {
   "name": "@konkon/parser-linux-x64-gnu",
   "version": "0.0.1",
-  "os": [
-    "linux"
-  ],
   "cpu": [
     "x64"
   ],
@@ -28,6 +25,9 @@
     "access": "public"
   },
   "repository": "https://github.com/KonkonBot/args-parser",
+  "os": [
+    "linux"
+  ],
   "libc": [
     "glibc"
   ]

@@ -33,8 +33,7 @@
       "aarch64-unknown-linux-musl",
       "aarch64-pc-windows-msvc",
       "armv7-linux-androideabi"
-    ],
-    "name": "parser"
+    ]
   },
   "engines": {
     "node": ">= 10"
@@ -48,12 +47,11 @@
     "bench": "bun run __bench__/index.bench.ts",
     "build": "tsc --build && napi build --platform --release --js bindings.js --dts bindings.d.ts",
     "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish -t npm",
+    "prepublishOnly": "pinst --disable && napi prepublish -t npm",
+    "postpublish": "pinst --enable",
     "test": "bun test",
     "version": "napi version",
-    "postinstall": "husky",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "postinstall": "husky"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
@@ -67,6 +65,7 @@
   },
   "packageManager": "yarn@1.22.22",
   "dependencies": {
+    "lint-staged": "^15.2.8",
     "seyfert": "1.5.0"
   },
   "lint-staged": {

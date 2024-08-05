@@ -50,17 +50,33 @@
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
     "test": "bun test",
-    "version": "napi version"
+    "version": "napi version",
+    "postinstall": "husky",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@napi-rs/cli": "3.0.0-alpha.62",
+    "husky": "^9.1.4",
     "mitata": "^0.1.11",
+    "pinst": "^3.0.0",
     "sslp": "^1.0.4",
     "typescript": "^5.5.3",
     "yunaforseyfert": "^0.10.3"
   },
-  "packageManager": "pnpm@9.6.0",
+  "packageManager": "yarn@1.22.22",
   "dependencies": {
-    "seyfert": "github:tiramisulabs/seyfert"
+    "seyfert": "1.5.0"
+  },
+  "lint-staged": {
+    "index.ts": [
+      "biome check --files-ignore-unknown=true",
+      "biome check --write --no-errors-on-unmatched",
+      "biome check --write --organize-imports-enabled=false --no-errors-on-unmatched",
+      "biome check --write --unsafe --no-errors-on-unmatched",
+      "biome format --write --no-errors-on-unmatched",
+      "biome lint --write --no-errors-on-unmatched"
+    ]
   }
 }

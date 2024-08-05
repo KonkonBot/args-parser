@@ -1,0 +1,31 @@
+{
+  "name": "@konkon/parser-android-arm-eabi",
+  "version": "0.0.1",
+  "cpu": [
+    "arm"
+  ],
+  "main": "parser.android-arm-eabi.node",
+  "files": [
+    "parser.android-arm-eabi.node"
+  ],
+  "description": "Konkon args parser for Seyfert",
+  "keywords": [
+    "seyfert",
+    "args-parser",
+    "konkon",
+    "parser",
+    "arg-parser"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": "https://github.com/KonkonBot/args-parser",
+  "os": [
+    "android"
+  ]
+}

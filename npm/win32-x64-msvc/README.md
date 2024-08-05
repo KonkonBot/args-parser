@@ -1,3 +1,3 @@
-# `@konkon/parser-win32-x64-msvc`
+# `@konkonbot/parser-win32-x64-msvc`
 
-This is the **x86_64-pc-windows-msvc** binary for `@konkon/parser`
+This is the **x86_64-pc-windows-msvc** binary for `@konkonbot/parser`

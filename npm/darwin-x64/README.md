@@ -1,3 +1,3 @@
-# `@konkon/parser-darwin-x64`
+# `@konkonbot/parser-darwin-x64`
 
-This is the **x86_64-apple-darwin** binary for `@konkon/parser`
+This is the **x86_64-apple-darwin** binary for `@konkonbot/parser`

@@ -1,5 +1,5 @@
 {
-  "name": "@konkon/parser",
+  "name": "@konkonbot/parser",
   "version": "0.0.4",
   "description": "Konkon args parser for Seyfert",
   "main": "index.js",
@@ -54,7 +54,7 @@
     "postpublish": "pinst --enable",
     "test": "bun test",
     "version": "napi version",
-    "postinstall": "husky"
+    "_postinstall": "husky"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
@@ -80,5 +80,25 @@
       "biome format --write --no-errors-on-unmatched",
       "biome lint --write --no-errors-on-unmatched"
     ]
+  },
+  "author": "Chewawi",
+  "bugs": {
+    "url": "https://github.com/KonkonBot/args-parser/issues"
+  },
+  "homepage": "https://github.com/KonkonBot/args-parser#readme",
+  "optionalDependencies": {
+    "@konkon/parser-darwin-x64": "0.0.4",
+    "@konkon/parser-darwin-arm64": "0.0.4",
+    "@konkon/parser-linux-x64-gnu": "0.0.4",
+    "@konkon/parser-win32-x64-msvc": "0.0.4",
+    "@konkon/parser-linux-x64-musl": "0.0.4",
+    "@konkon/parser-linux-arm64-gnu": "0.0.4",
+    "@konkon/parser-win32-ia32-msvc": "0.0.4",
+    "@konkon/parser-linux-arm-gnueabihf": "0.0.4",
+    "@konkon/parser-android-arm64": "0.0.4",
+    "@konkon/parser-freebsd-x64": "0.0.4",
+    "@konkon/parser-linux-arm64-musl": "0.0.4",
+    "@konkon/parser-win32-arm64-msvc": "0.0.4",
+    "@konkon/parser-android-arm-eabi": "0.0.4"
   }
 }

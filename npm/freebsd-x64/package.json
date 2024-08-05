@@ -1,6 +1,6 @@
 {
-  "name": "@konkon/parser-freebsd-x64",
-  "version": "0.0.2",
+  "name": "@konkonbot/parser-freebsd-x64",
+  "version": "0.0.4",
   "cpu": [
     "x64"
   ],
@@ -16,6 +16,8 @@
     "parser",
     "arg-parser"
   ],
+  "author": "Chewawi",
+  "homepage": "https://github.com/KonkonBot/args-parser#readme",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
@@ -24,7 +26,13 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "repository": "https://github.com/KonkonBot/args-parser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KonkonBot/args-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KonkonBot/args-parser/issues"
+  },
   "os": [
     "freebsd"
   ]

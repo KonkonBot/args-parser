@@ -4,7 +4,10 @@
   "description": "Konkon args parser for Seyfert",
   "main": "index.js",
   "types": "index.d.ts",
-  "repository": "https://github.com/KonkonBot/args-parser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KonkonBot/args-parser.git"
+  },
   "license": "MIT",
   "keywords": [
     "seyfert",

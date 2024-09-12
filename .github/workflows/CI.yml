@@ -382,7 +382,7 @@ jobs:
           options: '--platform linux/arm/v7 -v ${{ github.workspace }}:/build -w /build'
           run: |
             set -e
-            yarn test
+            bun test
             ls -la
   publish:
     name: Publish

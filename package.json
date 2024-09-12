@@ -1,6 +1,6 @@
 {
   "name": "@konkonbot/parser",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "description": "Konkon args parser for Seyfert",
   "main": "index.js",
   "types": "index.d.ts",

@@ -16,6 +16,11 @@
     "parser",
     "arg-parser"
   ],
+  "author": "Chewawi",
+  "bugs": {
+    "url": "https://github.com/KonkonBot/args-parser/issues"
+  },
+  "homepage": "https://github.com/KonkonBot/args-parser#readme",
   "files": [
     "index.d.ts",
     "index.js"
@@ -47,7 +52,6 @@
   },
   "scripts": {
     "artifacts": "napi artifacts",
-    "bench": "bun run __bench__/index.bench.ts",
     "build": "tsc --build && napi build --platform --release --js bindings.js --dts bindings.d.ts",
     "build:debug": "napi build --platform",
     "prepublishOnly": "pinst --disable && napi prepublish -t npm",
@@ -60,11 +64,8 @@
     "@biomejs/biome": "1.8.3",
     "@napi-rs/cli": "3.0.0-alpha.62",
     "husky": "^9.1.4",
-    "mitata": "^0.1.11",
     "pinst": "^3.0.0",
-    "sslp": "^1.0.4",
-    "typescript": "^5.5.3",
-    "yunaforseyfert": "^0.10.3"
+    "typescript": "^5.5.3"
   },
   "packageManager": "yarn@1.22.22",
   "dependencies": {
@@ -80,10 +81,5 @@
       "biome format --write --no-errors-on-unmatched",
       "biome lint --write --no-errors-on-unmatched"
     ]
-  },
-  "author": "Chewawi",
-  "bugs": {
-    "url": "https://github.com/KonkonBot/args-parser/issues"
-  },
-  "homepage": "https://github.com/KonkonBot/args-parser#readme"
+  }
 }

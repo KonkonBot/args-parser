@@ -193,6 +193,8 @@ jobs:
           path: artifacts
       - name: Move artifacts
         run: yarn artifacts
+      - name: Build
+        run: yarn build
       - name: List packages
         run: ls -R ./npm
         shell: bash

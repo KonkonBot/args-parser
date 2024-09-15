@@ -23,7 +23,9 @@
   "homepage": "https://github.com/KonkonBot/args-parser#readme",
   "files": [
     "index.d.ts",
-    "index.js"
+    "index.js",
+    "bindings.js",
+    "bindings.d.ts"
   ],
   "napi": {
     "binaryName": "parser",

@@ -79,6 +79,11 @@ jobs:
         with:
           node-version: 20
           cache: yarn
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        if: ${{ !matrix.settings.docker }}
+        with:
+          bun-version: latest
       - name: Install
         uses: dtolnay/rust-toolchain@stable
         if: ${{ !matrix.settings.docker }}
@@ -318,10 +323,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
